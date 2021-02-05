@@ -3,7 +3,6 @@
     font-size: 1em;
     color: rgb(136, 106, 70);
     border-color: rgb(136, 106, 70);
-    transition: .5s ease;
 }
 .container{
     width: 500px;
@@ -38,6 +37,7 @@ h1{
     overflow: hidden;
     border-bottom: 2px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
+    transition: .5s;
 }
 .todoTxt:focus{
     height: 75px;
