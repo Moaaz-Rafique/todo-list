@@ -34,7 +34,7 @@ function setPost() {
         }
         else{
             if(todoText.value===""){
-                todoText.value=pre
+                todoText.value=prev
             }
             editButton.innerHTML = "Edit"
             flag = true
