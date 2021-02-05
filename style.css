@@ -2,6 +2,8 @@
     font-family: 'Sriracha', cursive;
     font-size: 1em;
     color: rgb(136, 106, 70);
+    border-color: rgb(136, 106, 70);
+    transition: .5s ease;
 }
 .container{
     width: 500px;
@@ -22,15 +24,25 @@ input{
     height: 30px;
     margin: 20px auto 10px auto;
 }
+
 h1{
     font-size: 4em;
     margin: -15px;
     padding: 0px;
 }
-h2{
+.todoTxt{
+    border-radius: 0;
     height: 50px;
     font-size: 2.5em;
+    border: none;
     overflow: hidden;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+.todoTxt:focus{
+    height: 75px;
+    font-size: 3em;
+    border-color: rgb(136, 106, 70);
 }
 button{
     width: 40%;
