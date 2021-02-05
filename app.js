@@ -38,7 +38,7 @@ function setPost() {
             }
             editButton.innerHTML = "Edit"
             flag = true
-            todoText.disabled = flag            
+            todoText.disabled = flag   df           
         }
 
     }
