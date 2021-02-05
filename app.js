@@ -23,14 +23,19 @@ function setPost() {
     closeButton.innerHTML = "Delete"
     div.appendChild(todoText)
     div.setAttribute("class", 'card')    
+    var prev=""
     editButton.onclick = function () {
         if (flag) {
+            prev=todoText.value
             editButton.innerHTML = "Update"
             flag = false
             todoText.disabled = flag  
             todoText.focus()        
         }
         else{
+            if(todoText.value===""){
+                todoText.value=pre
+            }
             editButton.innerHTML = "Edit"
             flag = true
             todoText.disabled = flag            
