@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
- 
-<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
@@ -24,28 +24,30 @@
     };
   firebase.initializeApp(firebaseConfig);
 </script>
+
 </head>
 <body>
     
 
+    
     <div class="mainForm">
         <div class="form">
-            <h3>Login Form</h3>
+            <h3>SignUp Form</h3>
             <label for="">
                 <input id="email" type="text" placeholder="abc@gmail.com">
             </label> <br>
             <label for="">
-                <input id="password" type="password" placeholder="Password" onkeydown="clicked()">
+                <input id="password" type="password" placeholder="Password">
             </label> <br>
-          <a href="#"><button onclick="getData()" id="loginBtn" >Login</button></a>
+            <button onclick="userData()">Sign Up</button>
             <br>
             <div class="txt">
-                Sign Up here <a id="signUp" href="signUp.html">Sign Up</a>
+                Login here <a id="login" href="index.html">Login.</a>
             </div>
         </div>
     </div>
 
+    <script src="signUp.js"></script>
 
-    <script src="app2.js"></script>
 </body>
 </html>

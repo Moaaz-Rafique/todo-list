@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyARnwVbhuQa_cdOPU-MINWaZwFneBH8mTY",
+        authDomain: "todo-app-325ec.firebaseapp.com",
+        projectId: "todo-app-325ec",
+        storageBucket: "todo-app-325ec.appspot.com",
+        messagingSenderId: "8183904665",
+        appId: "1:8183904665:web:8f28feaddf155ef302fb08"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <title>Todo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do App</h1>
+        <input type="text" name="" id="inj">
+        <button onclick="setPost()">Post</button>
+        <button onclick="delAll()">Delete All</button>
+        <div id="main">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

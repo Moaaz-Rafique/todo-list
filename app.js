@@ -1,4 +1,6 @@
-var db = firebase.database().ref('/posts/');
+var ukey=(window.location.href).slice(-20)
+var db = firebase.database().ref('/user/').child(ukey).child("posts")
+
 getAllPosts()
 function setPost() {
     var inp = document.getElementById("inj")
@@ -69,7 +71,7 @@ function addToDataBase(inpText){
 
 }
 function getAllPosts(){
-    firebase.database().ref('/posts/').once('value',function(data){
+    db.once('value',function(data){
         for(var d in data.val()){
             addPostToList(d,data.val()[d].postData)
         }
